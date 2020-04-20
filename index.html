@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Distinctly</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" media="screen and (min-width:1000px)" href="style.css" type="text/css"/>
+        <link rel="stylesheet" media="screen and (max-width:550px)" href="stylemobile.css" type="text/css"/>
+        <link rel="stylesheet" media="screen and (min-width:550px) and (max-width:1000px)" href="styletablette.css" type="text/css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0, user-scalable=no">
+
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <!-- Bannière du site internet. -->
+        <div id="banniere">
+
+            <div id="menumobile">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+            <a href="" id="logomobile">Distinctly</a>
+
+
+            <ul id="menu">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li id="logo"><a href="">Distinctly</a></li>
+                <li><a href="#inscriptiondiv">Inscription</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <h3>Trouvez un freelance pour votre projet.</h3>
+
+            <p>
+                Distinctly est une plateforme conçue pour mettre<br />
+                en contact les freelances et les entreprises.<br />
+                L'inscription est gratuite<br /><br />
+                Le site est en cours de construction. <br /> L'inscription n'est ouverte qu'aux freelances pour l'instant.
+            </p>
+
+            <a href="#inscriptiondiv" id="inscription">S'inscrire</a>
+
+        </div>
+
+        <!-- Présentation du site, concept de Distinctly. -->
+        <div class="nc" id="presentation">
+            <h3>Présentation</h3>
+            <p>Distinctly est une plateforme de mise en relation de freelances avec des entreprises.
+            L'inscription est <strong>entièrement gratuite</strong>, aussi bien pour les freelances que pour les entreprises.<br /><br />
+
+            Distinctly arrive très bientôt. Le site est en cours de construction. Cependant, l'inscription est déjà ouverte
+            aux freelances.
+            </p>
+        </div>
+
+        <!-- Les fonctionnalités du prétendu futur site internet. -->
+        <div class="nc" id="fonctionnalites">
+            <h3>Fonctionnalités</h3>
+            <p>
+                Distinctly proposera plusieurs fonctionnalités intéressantes : 
+                <ul>
+                    <li>Proposer des projets et les soumettre aux freelances afin qu'ils fassent des offres.</li>
+                    <li>Avoir une liste de freelances, et pouvoir communiquer avec eux très rapidement.</li>
+                    <li>Pouvoir choisir, via les offres, le tarif le moins cher pour vous.</li>
+                    <li>Pour les freelances, une plateforme moderne et un moyen facile de trouver des clients, une nouvelle place,
+                        une expérience unique.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- L'inscription permet d'ajouter des compétences en plus de ses coordonnées. Une datalist et une liste de potentiels compétences sont donc mis, mais ne sont pas nécessaires. -->
+        <div id="inscriptiondiv">
+            <h3>Pré-inscription</h3>
+            <datalist id="competencelist">
+                <option value="HTML"/>
+                <option value="CSS"/>
+                <option value="JAVASCRIPT"/>
+                <option value="NODEJS"/>
+                <option value="REACTJS"/>
+                <option value="ANGULARJS"/>
+                <option value="VUEJS"/>
+                <option value="WEB FRONT-END"/>
+                <option value="WEB BACK-END"/>
+                <option value="JAVA"/>
+                <option value="GUI"/>
+                <option value="LINUX"/>
+                <option value="WINDOWS"/>
+                <option value="PYTHON"/>
+                <option value="RUBY"/>
+                <option value="DJANGO"/>
+                <option value="RUBY-ON-RAILS"/>
+                <option value="EMBARQUÉ"/>
+                <option value="C"/>
+                <option value="C++"/>
+                <option value="C#"/>
+                <option value="JEUX-VIDÉOS"/>
+                <option value="PENTESTING"/>
+                <option value="GRAPHISME"/>
+                <option value="DÉVELOPPEMENT ANDROID"/>
+                <option value="DÉVELOPPEMENT IOS"/>
+                <option value="DÉVELOPPEMENT MOBILE"/>
+                <option value="ADMINISTRATION RÉSEAUX"/>
+                <option value="ADMINISTRATION SYSTÈME"/>
+                <option value="RÉSEAUX"/>
+                <option value="QT"/>
+                <option value="GTK+"/>
+                <option value="INGÉNIERIE SON"/>
+                <option value="SWIFT"/>
+                <option value="OBJECTIVE-C"/>
+                <option value="PHP"/>
+                <option value="LARAVEL"/>
+                <option value="SYMFONY"/>
+                <option value="BASH"/>
+                <option value="SQL"/>
+                <option value="MYSQL"/>
+                <option value="BASE DE DONNÉES"/>
+                <option value="POSTGRESQL"/>
+                <option value="NOSQL"/>
+                <option value="HARDWARE"/>
+                <option value="OSX"/>
+                <option value="MARKETING"/>
+                <option value="MANAGEMENT"/>
+            </datalist>
+            <label>Nom :</label> <br /> <input id="nom" type="text" /><br/><br />
+            <label>Prénom :</label> <br /> <input id="prenom"  type="text" /><br/><br />
+            <label>E-mail :</label> <br /> <input id="email"  type="email"/><br/><br />
+            <label>Mot de passe :</label> <br /> <input id="password"  type="password" /><br/><br />
+            <p id="competencesdisplay"></p>
+            <label>Compétences <strong>(appuyez sur la touche d'entrée pour ajouter)</strong>: </label> <br /> <input style="text-transform: uppercase;" id="competences" list="competencelist" type="text" name="competences"/><br/><br />
+            <label>Ville: </label><br /> <input id="ville" type="text"><br /><br />
+            <input type="checkbox" id="newsletter" /><label> J'accepte de recevoir des informations de la part du site.</label><br /><br />
+            <p id="response"></p>
+            <button id="boutonvalider">Valider</button><br /><br />
+
+        </div>
+
+        <div class="nc" id="contact">
+            <h3>Contact</h3>
+            <p>
+                Vous pouvez nous contacter à l'adresse email suivante : <a href="">distinctly0@gmail.com</a><br />
+                ou bien sur directement via <a href="https://www.twitter.com/distinctly0">Twitter</a>
+            </p>
+        </div>
+
+        <!-- Bouton pour se rendre en tête de page -->
+        <a id="topbutton">Aller en haut</a>
+        <br /><br /><br /><br />
+
+    </body>
+</html>

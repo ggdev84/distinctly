@@ -1,0 +1,248 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes anim{
+    0%{opacity: 0;}
+    90%{opacity: 1;}
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+#menumobile, #logomobile{
+    display: block;
+}
+
+#logomobile{
+    text-align: center;
+    font-family: "Pacifico";
+    font-size:30px;
+    text-decoration: none;
+    color:white;
+    padding-top:6px;
+    padding-left:50px;
+}
+
+#menumobile{
+    float:right;
+    margin:15px 14px 0 0 ;
+}
+
+#bar1, #bar2, #bar3{
+    width:40px;
+    height:4px;
+    background-color:white;
+    margin:6px 0;
+    transition:0.3s;
+}
+
+.change #bar1{
+    transform:rotate(-45deg) translate(0px, 10px);
+}
+
+.change #bar2{
+    opacity:0;
+}
+
+.change #bar3{
+    transform:rotate(45deg) translate(-4px, -13px);
+}
+
+
+#banniere{
+    text-align: center;
+    color:white;
+    background-image: url("bannieremobile.jpg");
+    background-size: cover;
+    height:800px;
+}
+
+#menu{
+    top:0;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:24px;
+    margin-top:15px;
+    animation: anim 0.4s ease-in;
+    display:none;
+}
+
+#menu li{
+    list-style-type:none;
+    display:block;
+    margin: 0;
+    margin-top:5px;
+}
+
+#menu li a{
+    text-decoration: none;
+    margin:0 45px 0 45px;
+    color:white;
+    transition:color 0.2s ease-in;
+}
+
+#menu li a:hover{
+    color:rgb(57, 105, 211);
+}
+
+#menu #logo{
+    display:none;
+}
+
+#banniere h3{
+    margin-top:100px;
+    font-size:5.5vw;
+    animation: anim 0.4s ease-in;
+
+}
+
+#banniere p{
+    margin-top:60px;
+    line-height: 1.5;    
+    font-size:3.5vw;
+    animation: anim 0.4s ease-in;
+    
+}
+
+
+
+#banniere #inscription{
+    color:rgb(63, 63, 63);
+    margin-top:60px;
+    text-decoration: none;
+    text-align: center;
+    border-radius:20px;
+    padding: 7px 25px 7px 25px;
+    font-size:4.5vw;
+    background-color:rgb(231, 231, 231);
+    cursor:pointer;
+    display:inline-block;
+    transition:background-color 0.2s ease-in;
+    transition:color 0.1s ease-in;
+    animation: anim 0.4s ease-in;
+}
+
+#banniere #inscription:hover{
+    color:white;
+    background-color:rgb(9, 103, 180);
+}
+
+.nc{
+    margin:50px 30px 0 30px;
+    text-align:center;
+    border-bottom: 1px dotted rgb(141, 141, 141);
+    animation:anim 0.8s ease-in;
+    animation: anim 0.5s ease-in;
+
+}
+
+#contact{
+    border-top: 1px dotted rgb(141, 141, 141);
+}
+
+.nc h3{
+    color:rgb(17, 105, 177);
+    font-size:25px;
+}
+
+.nc p, .nc ol, .nc ul{
+    margin-top:35px;
+    color:rgb(51, 51, 51);
+    font-size:21px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.nc ol li, .nc ul li{
+    margin-bottom:20px;
+}
+
+#inscriptiondiv {
+    margin:30px 15px 0 15px;
+    color:rgb(39, 39, 39);
+    font-size:20px;
+    display:block;
+    text-align: center;
+}
+
+#inscriptiondiv h3{
+    margin:0;
+    text-align: center;
+    margin-bottom:50px;
+    text-align: center;
+    color:rgb(17, 105, 177);
+    font-size:25px;
+}
+
+#inscriptiondiv input[type=text], #inscriptiondiv input[type=password], #inscriptiondiv input[type=email]{
+    border-radius:20px;
+    height:30px;
+    width:300px;
+    border:1px solid rgb(39, 39, 39);
+    text-align: center;
+    font-size:18px;
+}
+
+#inscriptiondiv button{
+    margin:0;
+    text-align:center;
+    margin-top:20px;
+    height:30px;
+    width:150px;
+    background-color:rgb(30, 124, 201);
+    border:none;
+    color:white;
+    border-radius:25px;
+    font-size:22px;
+    cursor:pointer;
+    transition:background-color 0.2s ease-in;
+}
+
+#inscriptiondiv button:hover{
+    background-color:rgb(9, 103, 180);
+}
+
+
+#topbutton{
+    bottom:20px;
+    right:30px;
+    position:fixed;
+    border-radius:30px;
+    padding: 8px 20px 8px 20px;
+    border:1px solid rgb(9, 103, 180);
+    
+    cursor: pointer;
+    font-size:15px;
+    background-color:white;
+    color:rgb(51, 51, 51);
+    transition:color 0.15s linear;
+    transition:background-color 0.25s linear;
+    display:none;
+}
+
+#topbutton:hover{
+    color:white;
+    background-color:rgb(9, 103, 180);
+    
+}
+
+#response{
+    text-align: center;
+    color:rgb(65, 65, 65);
+    display:none;
+    font-size:15px;
+}
+
+#competencesdisplay{
+    text-align: center;
+    background-color:rgb(233, 233, 233);
+    color:black;
+    margin:0 5% 10px 5%;
+    border-radius:3%;
+}
